@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   background-color: #141519;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Heebo', sans-serif;
+}
+.flip-card{
+   width: 23em;
+   height: 22em;
+}
+.flip-card-inner{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+}
+.flip-card-front, .flip-card-back{
+   /* position: absolute; */
+   width: 100%;
+   height: 100%;
+   backface-visibility:hidden;
+   border-radius: 15px;
+   background-color: rgb(30,37,47);
+   color: white;
+}
+.flip-card-front{
+   padding: 2em 2em;
+   text-align: justify;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.flip-card-front .icon{
+   width: 2em;
+   height: 2em;
+   border-radius:  100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #262E38;
+   padding: 15px 15px;
+}
+.flip-card-front h1{
+   padding: 0.3em 0px;
+}
+.flip-card-front p{
+   padding-bottom: 0.5em;
+   color: #626874
+}
+.flip-card-front .rating{
+   width: 100%;
+}
+.rating ul{
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   list-style: none;
+
+}
+.rating ul li{
+   width: 2.5em;
+   height: 2.5em;
+   border-radius:  100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:#6D757F;
+   background-color: rgb(38,47,56);
+}
+.rating ul li:hover{
+   background-color: #6D757F;
+   color: white;
+   cursor: pointer;
+}
+.rating ul li:active{
+   color: white;
+   background: #FC7613;
+}
+
+.flip-card-front button{
+   margin-top: 2em;
+   padding: 0.3em;
+   width: 100%;
+   border: none;
+   border-radius: 25px;
+   background-color: #FC7613;
+   color: white;
+   font-family: 'Heebo', sans-serif;
+   cursor: pointer;
+}
+.flip-card-front button:active{
+   background-color: white;
+   color: #FC7613;
+   
+}
+
+
+.flip-card-back{
+   padding: 2em 2em;
+}
+.flip-card-back .output{
+   margin: 10px 0px;
+   color: #FC7613;
+   background-color: rgb(38,47,56);
+   border-radius: 25px;
+}
+.flip-card-back .farewell{
+   color: #626874
+}
+
