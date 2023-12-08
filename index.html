@@ -5,8 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Interactive Rating Component</title>
    <link rel="stylesheet" href="style.css">
+   <script defer src="app.js"></script>
+
 </head>
 <body>
+   
    <div class="flip-card">
       <div class="flip-card-inner">
          <div class="flip-card-front">
@@ -17,25 +20,24 @@
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             <div class="rating">
                <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li>5</li>
+                  <li class="rating-btn" value="1">1</li>
+                  <li class="rating-btn" value="2">2</li>
+                  <li class="rating-btn" value="3">3</li>
+                  <li class="rating-btn" value="4">4</li>
+                  <li class="rating-btn" value="5">5</li>
                </ul>
             </div>
-            <button type="submit">SUBMIT</button>
+            <button id="submit" type="submit">SUBMIT</button>
          </div>
 
          <div class="flip-card-back">
             <img src="images/illustration-thank-you.svg" alt="">
-            <p class="output">You selected 4 of out 5</p>
+            <p class="output"></p>
             <h1>Thank You!</h1>
             <p class="farewell">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
          </div>
       </div>
    </div>
 
-   <script defer src="app.js"></script>
 </body>
 </html>

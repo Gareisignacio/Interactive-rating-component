@@ -82,9 +82,10 @@ body{
    color: white;
    cursor: pointer;
 }
-.rating ul li:active{
-   color: white;
-   background: #FC7613;
+
+.selected{
+   color: #fff !important; 
+   background-color: #FC7613 !important;
 }
 
 .flip-card-front button{
