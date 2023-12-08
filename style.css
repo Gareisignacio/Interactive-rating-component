@@ -39,6 +39,7 @@ body{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   position: absolute;
 }
 .flip-card-front .icon{
    width: 2em;
@@ -107,7 +108,9 @@ body{
 
 
 .flip-card-back{
+   position: absolute;
    padding: 2em 2em;
+   visibility: hidden;
 }
 .flip-card-back .output{
    margin: 10px 0px;
@@ -118,4 +121,5 @@ body{
 .flip-card-back .farewell{
    color: #626874
 }
+
 

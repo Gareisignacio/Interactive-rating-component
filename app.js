@@ -5,33 +5,35 @@ const submitBtn = document.querySelector("#submit");
 
 const output = document.querySelector(".output")
 
+const cardBack = document.querySelector(".flip-card-back")
+
+
 ratingBtn.forEach(btn =>{
-   btn.addEventListener("click", (e)=>{
+
+   btn.addEventListener("click", (e)=>{      
       let value = btn.value;
-      btn.classList.toggle("selected")
-      console.log(btn.classList.contains("selected"));
+
       let btnList = btn.parentNode.children;
-      console.log(btnList);
-      console.log(btnList.classlist.remove("selected"))
 
-      
+      btn.classList.toggle("selected");
 
+      for(let i = 0; i < btnList.length; i++){
+         btnList[i].classList.remove("selected")
+      }
 
-
+      btn.classList.toggle("selected");
       output.textContent = `You selected ${value} out of 5`
    })
 })
 
 submitBtn.addEventListener("click", ()=>{
-   
+   if(output.textContent !== ""){
+      cardBack.style = "visibility: visible";
+   } else {
+      alert("Select a rate please")
+
+   } 
 })
 
-// if(thisBtn.classList.contains("selected")){
-//    thisBtn.style.color = "white"
-//    thisBtn.style.backgroundColor = "Orange"
-// } else{
-//    thisBtn.style.color = "#6D757";
-//    thisBtn.style.backgroundColor = "rgb(38,47,56)"
-// }
 
 
